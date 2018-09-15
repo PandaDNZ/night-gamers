@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity('YouTube', { type: 'WATCHING' });
+    client.user.setGame('Guardian of NIGHT GAMERS server!')
 });
 
 client.on('message', msg => {
