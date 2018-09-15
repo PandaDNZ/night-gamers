@@ -3,8 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setGame("created by PandaRO for NightGamers");
-    client.user.setGame("dnd");
+ client.user.setPresence({ status: 'online', game: { name: 'insert message here' } });
 });
 
 client.on('message', msg => {
