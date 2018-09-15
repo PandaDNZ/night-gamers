@@ -2,8 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setGame("created by PandaRO for NightGamers");
     console.log('I am ready!');
+    client.user.setGame("created by PandaRO for NightGamers");
+    client.user.setGame("Do Not Disturb");
 });
 
 client.on('message', msg => {
