@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle' })
+    client.user.setActivity({game: {name: "with my code", type: 0}});
 });
 
 client.on('message', msg => {
