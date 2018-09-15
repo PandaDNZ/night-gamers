@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('!ready', () => {
-    bot.user.setStatus("dnd")
+    bot.user.setStatus("Online")
     bot.user.setGame("PandaRO Seful meu!")
     console.log('I am ready!');
 });
