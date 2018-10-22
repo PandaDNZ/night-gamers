@@ -5,7 +5,7 @@ client.on('ready', () => {
     client.user.setStatus('available')
     client.user.setPresence({
         game: {
-            name: 'with depression',
+            name: 'BGAME.RO - COMING SOON!',
             type: "STREAMING",
             url: "https://www.twitch.tv/pandadnz"
         }
