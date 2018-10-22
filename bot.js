@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = "+";
+
 
 client.on('ready', () => {
     client.user.setStatus('available')
@@ -13,7 +15,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Cine e seful aici?') {
+    if (!message.content.startsWith(prefix)) return;
+  if (message.content.startsWith(prefix + "Cine e seful aici?")) {
     msg.reply('Panda e seful!');
   }
 });
