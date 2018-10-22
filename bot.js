@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 client.on('message', msg => {
   if (msg.content === 'Cine e seful aici?') {
-    msg.reply('Panda e seful!lalalalallalalal');
+    msg.reply('Panda e seful!');
   }
 });
 
