@@ -17,7 +17,7 @@ client.on('ready', () => {
 client.on('message', msg => {
     if (!message.content.startsWith(prefix)) return;
   if (message.content.startsWith(prefix + "Cine e seful aici?")) {
-    msg.reply('Panda e seful!');
+    message.channel.send("@ャραиđ∂ℜǾツ#0001 ");
   }
 });
 
