@@ -6,7 +6,7 @@ client.on('ready', () => {
     client.user.setStatus('available')
     client.user.setPresence({
         game: {
-            name: 'BGAME.RO - COMING SOON!',
+            name: 'EVILZONE.RO - EVILS IS HERE',
             type: "STREAMING",
             url: "https://www.twitch.tv/pandadnz"
         }
