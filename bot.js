@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "+";
 
 
 client.on('ready', () => {
@@ -14,10 +13,16 @@ client.on('ready', () => {
     });
 });
 
-client.on('message', msg => {
-    if (!message.content.startsWith(prefix)) return;
-  if (message.content.startsWith(prefix + "Cine e seful aici?")) {
-    message.channel.send("@ャραиđ∂ℜǾツ#0001 ");
+const prefix = "!";
+client.on("message", (message) => {
+  // Exit and stop if it's not there
+  if (!message.content.startsWith(prefix)) return;
+ 
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
+  } else
+  if (message.content.startsWith(prefix + "foo")) {
+    message.channel.send("bar!");
   }
 });
 
